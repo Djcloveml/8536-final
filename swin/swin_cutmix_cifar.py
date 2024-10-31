@@ -226,6 +226,19 @@ def main():
         ignore_mismatched_sizes=True,
     )
 
+    
+    # For the lora rank experiment
+    # lora_config = LoraConfig(
+    #     r=8,  #
+    #     lora_alpha=16, 
+    #     target_modules=["query", "value"],  # 
+    #     lora_dropout=0.1,  
+    #     bias="none",  
+    # )
+
+    
+    # model = get_peft_model(model, lora_config)
+
     training_args = TrainingArguments(
         output_dir="swin-cutmix-cifar100",
         remove_unused_columns=False,
