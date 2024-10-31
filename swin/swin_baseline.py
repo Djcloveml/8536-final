@@ -113,15 +113,16 @@ def main():
         label2id=label2id,
     )
 
+    # For the lora rank experiment
     # lora_config = LoraConfig(
-    #     r=8,  # LoRA 中的秩
-    #     lora_alpha=16,  # alpha 参数
-    #     target_modules=["query", "value"],  # 选择应用 LoRA 的目标模块
-    #     lora_dropout=0.1,  # LoRA 的 dropout 比例
-    #     bias="none",  # 不应用到 bias
+    #     r=8,  #
+    #     lora_alpha=16, 
+    #     target_modules=["query", "value"],  # 
+    #     lora_dropout=0.1,  
+    #     bias="none",  
     # )
 
-    # # 将 LoRA 应用于模型
+    
     # model = get_peft_model(model, lora_config)
 
     training_args = TrainingArguments(
